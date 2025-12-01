@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     Prueva_2_Filtrados
+Instances:    6493
+Attributes:   2
+              dist_nearest_ghost_x
+              dist_nearest_ghost_y
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 9
+Within cluster sum of squared errors: 115.01643879023763
+
+Initial starting points (random):
+
+Cluster 0: 0.590909,0.285714
+Cluster 1: 0.636364,0.52381
+Cluster 2: 0.727273,0.571429
+Cluster 3: 0.363636,0.666667
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                    Cluster#
+Attribute               Full Data          0          1          2          3
+                         (6493.0)    (666.0)   (2630.0)   (1840.0)   (1357.0)
+=============================================================================
+dist_nearest_ghost_x       0.5636     0.2529     0.6076     0.7062     0.4373
+dist_nearest_ghost_y       0.6219     0.4208     0.5162     0.7041      0.814
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       666 ( 10%)
+1      2630 ( 41%)
+2      1840 ( 28%)
+3      1357 ( 21%)
+
